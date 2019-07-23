@@ -5,3 +5,5 @@ cd go to jenkins path cd C:\Users\Mayuresh\Downloads
 run- java -jar jenkins.war
 
 jenkis  admin :- 6eb7c722d38346ac9db8cf2450293f03
+
+jenkins Home Path for deployment:-- C:\Users\Mayuresh\.jenkins\workspace

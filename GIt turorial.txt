@@ -1,0 +1,34 @@
+first go to folder wher you want to initalize git
+
+git init
+
+git status
+
+while commit you must porivde init path and address
+
+
+I spend on it lots hours when i call php script to init and commit git. And i Found the work flow should Be:
+
+1.git init
+2.git config user.name "someone"
+3.git config user.email "someone@someplace.com"
+4.git add *
+5.git commit -m "some init msg"
+
+Git Hub accout
+
+mayureshpatil
+email:-mayureshpatil95@gmail.com
+Mayu@1234
+
+to upload local code to github repository use below command
+
+
+git remote add origin https://github.com/mayureshpatil/first.git
+
+
+if not working put https://github.com/mayureshpatil/first.git
+
+
+
+

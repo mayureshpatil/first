@@ -1,0 +1,12 @@
+Tomcat Tutorial :
+
+Install tocat
+unzip file
+go to path 
+
+TO change port:
+
+C:\Users\Mayuresh\Downloads\apache-tomcat-8.5.43\conf
+
+efit server .conf
+change port number 9090
