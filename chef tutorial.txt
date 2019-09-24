@@ -1,0 +1,65 @@
+devopstraining57@gmail.com	Kittu@123
+
+
+covert pem file to ppk 
+2 login putty copy ip address
+aut
+ppm
+
+then on linux
+wget https://packages.chef.io/files/stable/chefdk/4.3.13/ubuntu/18.04/chefdk_4.3.13-1_amd64.deb
+
+ls
+
+dpkg i che	
+
+chef --version
+
+
+13.58.102.35
+
+reciep;-
+
+package 'tree' do
+        action:install
+end
+package 'ntp'
+
+file '/etc/motd' do
+        content "this isthe property of capgemini"
+        action :create
+        owner 'root'
+        group 'root'
+end
+
+
+
+
+-------------------------------------------
+
+
+service 'ntp' do
+        action [:enable, :start]
+end
+
+
+------------------------------------------
+
+
+package 'apache2' do
+        action:install
+end
+
+service 'apache2' do
+        action :start
+end
+file '/var/www/html/index.html' do
+        content 'he'
+        action:create
+        user 'root'
+end
+
+
+----------------------------------------------
+
+pa
