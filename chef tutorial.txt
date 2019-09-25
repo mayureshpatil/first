@@ -62,4 +62,257 @@ end
 
 ----------------------------------------------
 
-pa
+how to use varible 
+
+
+package 'tree' do
+        action:install
+end
+package 'ntp'
+package 'vim'
+
+file '/etc/motd' do
+        content "this is cg
+        HOSTNAME: #{node['hostname']}"
+end
+
+service 'ntp' do
+        action [:enable,:start]
+end
+
+
+--------------------------------------------------------
+
+
+ 1  wget https://packages.chef.io/files/stable/chefdk/4.3.13/ubuntu/18.04/chefdk_4.3.13-1_amd64.deb
+    2  ls
+    3  dpkg -i chefdk_4.3.13-1_amd64.deb
+    4  chef --version
+    5  cat new.rb
+    6  vi new.rb
+    7  cat new.rb
+    8  ls
+    9  ls
+   10  chef-client -z new.rb
+   11  ls -l
+   12  chef-client -z new.rb
+   13  vi new.rb
+   14  chef-client -z new.rb
+   15  ls
+   16  ls
+   17  vi new.rb
+   18  chef-client -z new.rb
+   19  apt-get update
+   20  chef-client -z new.rb
+   21  vi new.rb
+   22  tree
+   23  vi new.rb
+   24  vi setup.rb
+   25  date
+   26  uptime
+   27  chef-client -z setup.rb
+   28  cat setup.rb
+   29  vi /etc/motd
+   30  cat /etc/motd
+   31  ls
+   32  vi setup.rb
+   33  chef-client -z setup.rb
+   34  servic staus ntp
+   35  service staus ntp
+   36  service status ntp
+   37  service ntp status
+   38  vi setup.rb
+   39  chef-client -z setup.rb
+   40  service ntp status
+   41  vi setup.rb
+   42  service ntp status
+   43  vi setup.rb
+   44  chef-client -z setup.rb
+   45  service ntp status
+   46  ls
+   47  uptime
+   48  ipconfig
+   49  ifconfig
+   50  vi webservic.rb
+   51  vi new.rb
+   52  vi setup.rb
+   53  vi webservic.rb
+   54  chef-client -z webservic.rb
+   55  vi webservic.rb
+   56  vi webservic.rb
+   57  chef-client -z webservic.rb
+   58  vi webservic.rb
+   59  chef-client -z webservic.rb
+   60  service apache status
+   61  vi webservic.rb
+   62  chef-client -z webservic.rb
+   63  vi webservic.rb
+   64  vi setup.rb
+   65  vi webservic.rb
+   66  chef-client -z webservic.rb
+   67  service apache2 status
+   68  vi webservic.rb
+   69  vi webservic.rb
+   70  vi webservic.rb
+   71  chef-client -z webservic.rb
+   72  cd /var/www/html/
+   73  ls
+   74  cat index.html
+   75  cd ..
+   76  service apache2 status
+   77  ifconfig
+   78  uptime
+   79  mkdir cookbook
+   80  chef genrate cookbook cookbooks/workstation
+   81  chef genrate help
+   82  chef generate cookbook cookbooks/workstation
+   83  ls
+   84  mv cookbook cookbooks
+   85  chef generate cookbook cookbooks/workstation
+   86  cd cookbooks/
+   87  ls
+   88  cd workstation/
+   89  ls
+   90  tree
+   91  cd cookbooks/workstation/
+   92  cat metadata.rb
+   93  ls
+   94  cat recipes/default.rb
+   95  cd cookbooks
+   96  ls
+   97  cd .
+   98  cd ..
+   99  ls
+  100  mv setup.rb cookbooks/workstation/recipes/
+  101  tree cookbooks/workstation/recipes
+  102  cd cookbooks/workstation/
+  103  ls
+  104  git init
+  105  git status
+  106  git add recipes/setup.rb
+  107  git status
+  108  ls
+  109  ls
+  110  cd cookbooks/workstation/recipes/
+  111  ls
+  112  ls -la
+  113  git status
+  114  git add orgin master https://github.com/mayureshpatil/first.git
+  115  git remote add origin https://github.com/mayureshpatil/first.git
+  116  git push
+  117  git push origin master
+  118  chef genrate cookbook cookbooks/workstation/apache
+  119  chef genrate cookbook cookbooks/apache
+  120  chef generate cookbook cookbooks/apache
+  121  chef generate recipe cookbooks/apache/server
+  122  chef generate recipe cookbooks/apache/ server
+  123  tree
+  124  cd cookbooks/apache/recipes/
+  125  ls
+  126  vi server.rb
+  127  ls
+  128  chef exec ruby -c cookbooks/apache/recipes/server.rb
+  129  chef exex ruby -c cookbooks/apache/recipes/server.rb
+  130  chef exec ruby -c cookbooks/apache/recipes/server.rb
+  131  cd  cookbooks/apache/recipes/
+  132  vi server.rb
+  133  chef exex ruby -c cookbooks/apache/recipes/server.rb
+  134  chef exec ruby -c cookbooks/apache/recipes/server.rb
+  135  vi server.rb
+  136  chef exec ruby -c cookbooks/apache/recipes/server.rb
+  137  cd ...
+  138  cd ..
+  139  ls
+  140  chef exec ruby -c cookbooks/apache/recipes/server.rb
+  141  cd /cookbooks/apache/recipes
+  142  sudo -i
+  143  cd cookbooks/
+  144  ls
+  145  cd apache/
+  146  ls
+  147  cd recipes/
+  148  ls
+  149  vi server.rb
+  150  vi default.rb
+  151  cd ..
+  152  chef-client -z apche
+  153  chef-client -z -r apache
+  154  chef-client -z -r "apache"
+  155  ls
+  156  cd cookbooks/
+  157  ls
+  158  cat apache
+  159  apt-get remove apache2
+  160  ls
+  161  cd apache/
+  162  ls
+  163  cd recipes/
+  164  ls
+  165  vi server.rb
+  166  vi default.rb
+  167  chef-client -z -r 'apache'
+  168  vi default.rb
+  169  vi server.rb
+  170  cd
+  171  chef-client -z -r 'apache'
+  172  uptime
+  173  ohai
+  174  ohai ipaddress
+  175  ohai hostname
+  176  python --version
+  177  ohai cpu/0/mhz
+  178  ls
+  179  cd cookbooks/
+  180  ls
+  181  cd workstation/
+  182  ls
+  183  ...
+  184  vim cpuinfo.rb
+  185  chef-client -z cpuinfo.rb
+  186  vim cpuinfo.rb
+  187  cd cookbooks/workstation/
+  188  tree
+  189  ls
+  190  ll
+  191  cd cookbooks
+  192  ls
+  193  cd apache/
+  194  ls
+  195  cd recipes/
+  196  ls
+  197  vi server.rb
+  198  chef-client -z server.rb
+  199  vi server.rb
+  200  chef-client -z server.rb
+  201  vi server.rb
+  202  chef-client -z server.rb
+  203  vi server.rb
+  204  chef-client -z server.rb
+  205  vi server.rb
+  206  chef genrate
+  207  cd
+  208  chef genrate
+  209  chef generate
+  210  chef generate template cookbooks/workstation/motd
+  211  chef generate template cookbooks/workstation
+  212  chef generate template cookbooks/workstation/ motd
+  213  ls
+  214  treee
+  215  tree
+  216  vi motd.erb
+  217  cd cookbooks/workstation/templates/
+  218  vi motd.erb
+  219  cd
+  220  cd cookbooks/workstation/
+  221  cd recipes/
+  222  ls
+  223  vi setup.rb
+  224  chef-client -z setup.rb
+  225  chef
+  226  chef clean-policy-cookbooks
+  227  chef cleann
+  228  chef  clean-policy-cookbooks
+  229  history
+
+
+---------------------------------------------------------------
